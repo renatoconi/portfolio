@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header .logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+header .menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+header .menu-line{
+    height: 3px;
+    background-color: #333;}
+
+
+
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    
+
+}    
+
+.leftside {
+    background-color:#3B576d;
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+   padding: 0px 20px;
+}
+
+.rightside {
+    background-image: url(../images/Renato\ img1.jpg);
+    background-position:center top;
+    background-size: auto 100%;
+    flex: 1;
+    height: 100vh;
+}
+
+.leftside .info{
+    color: white;
+
+}
+
+.profession{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.name{
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.leftside .info .buttons a{
+    display: inline-block;
+    background-color: aliceblue;
+    color: #3B576d;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 3px;
+}
+
+.leftside .info .buttons a.light{
+    color: white;
+    background-color: black;
+}
+
+
+.buttons a:hover {
+    opacity:0.8
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+@media (max-width: 870px) {
+      .container{
+        flex-direction: column;
+        height: calc(100vh - 67px);
+      }
+
+    .container .leftside {
+      flex: none;
+      height: auto;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      text-align: center;  
+    }
+    .rightside {
+        flex: 1;
+        background-size: cover;
+        background-position: cover;
+    }
+
+    header {
+        position: initial;
+        background-color: #3B576d;
+    }
+
+    header .menu-line {
+        background-color: aliceblue;
+    }
+
+    footer {
+        position: initial;
+        color: #333;
+        font-size: 16px;
+        background-color: #3B576d;
+    }
+}
+    @media (max-width: 450px) {
+        .container .leftside .info .name {
+            font-size: 50px;
+        }
+
+        .container .leftside .info .buttons a{
+            display: block;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    
+    }

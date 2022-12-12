@@ -1,0 +1,396 @@
+*{ font-family: arial;}
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header { display: flex;
+    justify-content: center;
+    height: 120px;
+}
+.container {
+    width: 990px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.menu {
+       display: flex;
+       align-items: center;
+    
+    }
+
+nav ul {
+    display:flex;
+    
+    
+}    
+
+nav ul,
+nav ul li { list-style:none ;
+     
+     margin: 0;
+     padding: 0;
+    
+    }
+
+nav ul li a { 
+text-decoration: none ;
+text-transform: uppercase;
+display:block;
+padding: 15px;
+margin: 5px;
+color: #727272;
+font-family: arial;
+font-weight: 600;
+}
+
+nav .active a,
+nav ul li a:hover{ 
+    background-color:#39aae1;
+    color: white;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+   
+ }
+.column {
+    flex-direction: column;
+}
+.titulobanner{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.titulobanner h1 {
+
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding:0;
+    max-width: 350px;
+}
+.titulobanner h2 {
+
+    color: white;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.descriçaobanner {
+    
+    height: 210px;
+    display: flex;
+
+}
+
+.descriçaobanner1,
+.descriçaobanner2,
+.descriçaobanner3{
+flex:1;
+padding: 20px;
+color: white;
+}
+
+.descriçaobanner1{
+    background-color: #39aae1;
+}
+.descriçaobanner2{
+    background-color: #0079c7;
+}
+
+.descriçaobanner3{
+    background-color: #2b4c99;
+    
+}
+
+.titulo_options{
+
+font-size: 21px;
+}
+
+.desc_options {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+.descriçaobanner a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.desc_options3 {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 0.1mm solid #7272729d;
+    font-size: 13px; 
+    padding: 3px;
+
+
+}
+
+.container_desc_options3 {
+ margin-top: 8px;
+
+
+}
+
+
+#geral {
+
+    display: flex;
+    justify-content: center;
+}
+
+#geral section{
+    flex:2;
+}
+#geral aside {
+    flex: 1;
+    
+}
+
+.widget_titulo{
+  margin-top: 30px;
+  margin-bottom: 20px;  
+}
+.widget_titulo_text{ 
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_titulo_bar {
+    width: 50px;
+    height: 2px ;
+    background-color:#39aae1;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    }
+
+.widget_body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   
+    
+}
+.widget_quad{ 
+   
+    background-color: #0079c7;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    }
+.p1_apointment{
+    padding-bottom: 20px;
+    border-bottom: 0.1mm solid #7272729d; 
+}
+
+.apointment_quad {
+    width: 30px;
+    height: 30px;
+    background-color: #727272;
+    display: inline-block;
+    margin-right: 10px;
+}
+    .apointment_contactos{
+        display: flex;
+        flex-flow: wrap;
+        border-bottom: 0.1mm solid #7272729d;
+    }
+      
+    .widget_body_container_aponitment{
+
+        display:inline
+    }
+    article {
+        flex: 1;
+        min-width:300px;
+        margin-right: 20px; ;
+    }
+    article a {
+        text-decoration: none;
+    }
+    .widget_body_geral {
+        display: flex;
+        flex-flow: wrap;
+    }
+    article .news_data{
+        display: flex;
+        }
+
+    article .news_posted_at {
+        background-color: #2b4c99;
+        color: white;
+        font-size: 12px;
+        padding: 10px;
+        margin-right: 2px;
+
+    }
+
+    article .news_comments{
+        background-color: #0079c7;
+        color: white;
+        font-size: 12px;
+        padding: 10px;
+        }
+
+    article .news_thumbnail img{
+        width: 100%;
+        margin: auto;
+
+    }
+    article .news_thumbnail {
+        margin-top: 30px;
+     }
+
+     article .news_tittle {
+         margin-top: 25px;
+         margin-bottom: 25px;
+         font-size: 23px;
+     }
+
+     article .news_resume {
+         font: size 13px;
+         color: #5c5c5c;
+         line-height: 20px;
+         margin-bottom: 30px;
+     }
+
+     footer{
+         background-color: #1e1e1e;
+         display: flex;
+         justify-content: center;
+     }
+
+     .footer_menu {
+         display: flex;
+         flex: 1;
+     }
+
+     .fm1, .fm2, .fm3 {
+         flex: 1;
+         color: white;
+         padding: 25px;
+     }
+
+     .fm1 {
+         background-color: #39aae1 ;
+     }
+     .fm2 {
+         background-color: #0079c7;
+     }
+     .fm3 {
+         background-color:#2b4c99
+     } 
+     
+     .fm_tittle {
+         font-size: 26px;
+     }
+
+     .fm_legend {
+         font-size: 13px;
+         margin-top: 10px;
+     }
+
+
+
+     .footer_area{
+        
+         display: flex;
+        
+     }
+
+     .column {
+         flex-direction: column;
+     }
+
+     .footer_areaitem{
+         flex: 1;
+         color: white;
+     }
+
+     footer .widget_titulo_text {
+         color: white;
+     }
+
+     .footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color:#5c5c5c ;
+    font-size: 12px;
+    margin-top: 30px;
+    }
+
+    .containertext1{
+        display: flex;
+        flex-flow: wrap;
+        color: #727272;
+        font-size: 14px;
+        
+    }
+
+    .footer1text {
+        margin-right: 10px
+    }
+
+    .footer1adress, .footer1contactos {
+        margin-top: 30px;
+    }
+
+    .footer1contactos p {
+        color: white;
+        
+    }
+
+    .footer2text {
+        font-size: 14px;
+    }
+
+    .footer2text p {
+        color:#39aae1;
+        padding: 0;
+        margin-top: 0.4em;
+        font-size: 13px;
+    }
+
+    .containertext2 {
+        padding-left: 33px;
+    }
+
+    .footer2text::before {
+        content: "->";
+        position: absolute;
+        margin-left: -25px;
+        color: white;
+
+    }
+
+    .footer3textcolor{
+
+        color: #727272;
+    }
+
+
