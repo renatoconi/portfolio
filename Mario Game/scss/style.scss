@@ -1,0 +1,289 @@
+@import 'padrao-cores';
+@import 'animacoes';
+@import 'modal';
+
+//importacao da fonte
+
+@font-face{
+    font-family: 'mario';
+    src: url(../fonts/SuperMario256.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'mario';
+     
+};
+
+.cenario{
+    position: relative;
+    margin: 0 auto;
+    //width: 700px; temporario
+    //height: 500px; temporario
+    //border: 3px solid red;
+    width: 100%;
+    height: 100vh;
+    
+    background-image: linear-gradient($corazul, white);
+    border-bottom: 16px solid $corverde;
+    overflow: hidden;
+
+    &.start {
+
+       // .img-tubo{
+            
+       //     animation: mover-elementos 3s infinite linear;
+       // };
+    
+        //.img-bala{
+            
+         //   animation: mover-elementos 3s infinite linear 1.5s
+        //};
+    
+        .img-moeda{
+            
+            animation: mover-elementos 2.5s infinite linear 
+        };
+    
+        .img-moeda2{
+            
+            animation: mover-elementos 2.5s infinite linear .5s
+        };
+    
+        .img-moeda3{
+            
+            animation: mover-elementos 2.5s infinite linear 1s
+        };
+    
+        .img-estrela{
+            
+            animation: mover-elementos 2.5s infinite linear;
+        };
+    
+        .img-estrela2{
+            
+            animation: mover-elementos 2s infinite  linear 1.5s;
+    
+        };
+
+        .img-nuvens{
+            
+            animation: move-nuvens 20s infinite linear;
+            
+    
+        };
+    
+        .img-nuvens2{
+            
+            animation: move-nuvens 20s infinite linear 9s;
+            
+    
+        };
+    };
+
+
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .wrapper-topo{
+        width: 750px;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: white;
+        border: solid 4px $corazul;
+        box-shadow: 3px 3px $coramarelo, 1px 0 0.4em rgb(6, 6, 6);
+        opacity: 80%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        position: relative;
+        }
+
+        .coluna{
+            display: block;
+            text-align: center;
+
+            .titulo{
+                display: block;
+                font-size: 14px;
+                font-weight: 600;
+                color: $corazul;
+                margin-bottom: 10px;
+            }
+        }
+
+        .coluna-nome-jogador{
+            min-width: 30%;
+        }
+        .img-logo{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -40px;
+            margin: 0 auto;
+        }
+
+        .placar{
+            display: flex;
+            gap:10px
+
+        }
+    }
+
+    .sleep{
+        width: 100%;
+        height: 100vh;
+        display: none;
+
+        &.active {
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            justify-content: flex-start;
+            animation: fade-up 0.5s forwards;
+        }
+        .contagem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            border-radius: 50%;
+            border: 8px solid $corvermelho;
+            box-shadow: 2px 2px 20px rgba(0,0,0, .80);
+            font-size: 80px;
+            margin-top: 30px;
+            animation: pulsar 1s infinite; 
+        }
+
+        .wrapper-regras{
+            width: 700px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap:5px;
+            margin-top: 50px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 20px rgba(0,0,0, .70);
+            padding: 10px;
+            
+            
+            .bloco-regras{
+                display:grid;
+                grid-template-rows:auto;
+                gap: 10px;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+                font-size: 14px;
+                background-color: #f2f2f2;
+                border-radius: 5px;
+                padding: 10px;
+
+                .img-regras{
+                    width: 80px;
+    
+                }
+
+            }
+
+            
+        }
+    }
+    
+    
+    
+    
+    .img-mario{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        
+            
+    };
+
+    .img-nuvens{
+        position: absolute;
+        top: 200px;
+        right: -500px;
+    };
+
+    
+
+    .img-tubo{
+        position: absolute;
+        bottom: 0;
+        right: -80px;
+        
+    };
+
+    .img-bala{
+        position: absolute;
+        bottom: 100px;
+        right: -130px;
+        
+    };
+
+    .img-moeda{
+        position: absolute;
+        bottom: 170px;
+        right: -50px;
+         
+    };
+
+    
+
+    
+
+    .img-estrela{
+        position: absolute;
+        top: 200px;
+        right: -65px;
+        
+    };
+
+    
+    .abaixar{
+        width: 75px;
+        left: 60px;
+    }
+
+    .pular {
+        animation: pulo-mario .5s ease-out;
+    };
+
+    .voar {
+        animation: voo-mario 1.5s  ease-out;
+    }
+
+};
+
+//         ESTILO GLOBAL
+
+.azul{
+    color: $corazul;
+};
+
+.amarelo{
+    color: $coramarelo;
+};
+
+.verde {
+    color: $corverde;
+};
+
+.vermelho {
+    color:  $corvermelho;
+};
+
+
+
