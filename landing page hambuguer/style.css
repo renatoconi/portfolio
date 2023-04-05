@@ -140,6 +140,21 @@ body{
 
     }
 
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+
+
+    }
+
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .nav-menu{
         position: fixed;
         right: -100%;
@@ -151,9 +166,41 @@ body{
         gap: -10px;
         transition: all 0.3s;
     }
+
+    .nav-menu.ativo{
+        right: 0;
+    }
+
     .nav-item{
         margin: 16px 0;
     }
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        
+        gap: 5rem;
+
+    }
+
+    .home.text-h4{
+        font-size: 15px;
+    }
+
+    .home.text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home p{
+        font-size: 15px;
+    }
+
+    .home img{
+        width: 125%;
+    }
+
+
 }
 
 
