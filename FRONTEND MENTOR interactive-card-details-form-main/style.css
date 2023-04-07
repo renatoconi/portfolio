@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Space Grotesk, sans-serif ;
+    font-size: 13px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card{
+    height: 100vh;
+    width: 34%;
+    background-image: url("./images/bg-main-desktop.png") ;
+    background-size: cover;
+}
+
+.container-card-front{
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    left: 170px;
+    top: 185px;
+    background-image: url(./images/bg-card-front.png);
+    padding: 30px;
+    
+}
+
+.circle1{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color:hsl(270, 3%, 87%) ;
+}
+
+.circle2{
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 1px solid hsl(270, 3%, 87%);
+    position: relative;
+    left:64px;
+    top:-31px ;
+}
+
+.number-front-card{
+    color:hsl(270, 3%, 87%); ;
+    font-size:30px;
+    margin-top: 43px;
+    letter-spacing: 2px;
+}
+
+.container-name-valid-frontcard{
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.name-front-card{
+    color:hsl(270, 3%, 87%);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.valid-front-card{
+    color: hsl(270, 3%, 87%);
+    font-size: 15px;
+    letter-spacing: 2px;
+    
+}
+
+.container-card-back{
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    left: 257px;
+    top: 470px;
+    background-image: url(./images/bg-card-back.png);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cvc-cardback{
+    padding: 58px;
+    color:hsl(270, 3%, 87%);
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.container-form{
+    width: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    display: none;
+    
+}
+
+.active {
+    display: flex !important;
+   
+}
+
+.container-finish{
+    width: 66%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.container-finish h1{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(42, 14, 68);
+    
+}
+
+.container-finish h3{
+    margin-bottom: 30px;
+    color:hsl(270, 3%, 58%);
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+}
+
+form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+}
+
+
+
+.input-name-container{
+    margin-bottom: 20px;
+}
+
+.erro-name{
+    margin-top: 10px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    display: none;
+}
+
+.erro-card{
+    margin-top: 10px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    display: none;
+}
+
+.erro-mes-letters{
+    margin-top: 6px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    display: none;
+}
+
+.erro-mes-null{
+    margin-top: 6px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    display: none;
+    
+}
+
+.erro-ano-letters{
+    margin-top: 6px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    text-align: end;
+    display: none;
+}
+
+.erro-ano-null{
+    margin-top: 6px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    text-align: end;
+    display: none;
+    
+    
+    
+}
+
+.erro-cvc-letters{
+    margin-top: 6px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    text-align: center;
+    display: none;
+    
+}
+
+.erro-cvc-null{
+    margin-top: 6px;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    text-align: center;
+    display: none;
+    }
+
+
+.input-cardholder{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.card-number-container{
+    margin-bottom: 20px;
+}
+
+.input-cardnumber{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.container-date-cvc{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-mes{
+    width: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.input-ano{
+    width: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.card-cvc-container{
+margin-left: 12px;
+}
+
+.input-cvc{
+    width: 158px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input{
+    font-size: 18px;
+    border: 1px solid hsl(270, 3%, 87%);
+    outline-color: hsl(249, 99%, 64%);
+    
+}
+
+input::placeholder{
+    opacity: .4;
+}
+
+
+
+
+
+
+.btn-submit{
+    background-color: rgb(42, 14, 68);
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#btnFinish{
+    width: 300px;
+}
+
+
+@media  (max-width: 1220px){
+.container{
+    height: 100vh;
+    
+    flex-direction: column;
+}
+.container-card{
+    position: absolute;
+    top: 0;
+    height: 250px;
+    
+    width: 100%;
+    background-size: auto;
+}
+
+.container-card-back{
+    width: 290px ;
+    height: 159px;
+    
+    left: 65px;
+    top: 25px;
+    
+    background-size: contain;
+    
+}
+
+.container-card-front{
+    width: 290px;
+    height: 159px;
+    position: absolute;
+    left: 35px;
+    top: 120px;
+    background-size: contain;
+    padding: 12px;
+    z-index:1;
+}
+.circle1{
+    width: 35px;
+    height: 35px;
+    
+    
+}
+
+.circle2{
+    width: 15px;
+    height: 15px;
+   
+    left:48px;
+    top:-25px ;
+}
+
+.number-front-card{
+   
+    font-size:19px;
+    text-align: center;
+    margin-top: 23px;
+
+}
+
+
+.name-front-card{
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.valid-front-card{
+    font-size: 10px;
+    letter-spacing: 2px;
+    
+}
+
+.cvc-cardback{
+    padding: 35px;
+    
+    font-size: 13px;
+   
+}
+
+
+
+.container-form{
+    padding-top: 70px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    
+}
+
+
+form{
+    position: absolute;
+    left: 0;
+    
+}
+
+
+
+.input-name-container{
+    margin-bottom: 15px;
+}
+
+.erro-name{
+    margin-top: 3px;
+}
+
+.erro-card{
+    margin-top: 3px;
+    
+}
+
+.erro-mes-letters{
+    margin-top: 3px;
+}
+
+.erro-mes-null{
+    margin-top: 3px;
+   
+    
+}
+
+.erro-ano-letters{
+    margin-top: 3px;
+    
+}
+
+.erro-ano-null{
+    margin-top: 3px;
+    
+}
+
+.erro-cvc-letters{
+    margin-top: 3px;
+    
+}
+
+.erro-cvc-null{
+    margin-top: 3px;
+    
+    }
+
+
+.input-cardholder{
+    width: 300px;
+    
+}
+
+
+.input-cardnumber{
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+.input-cvc{
+    width: 105px;
+    
+}
+
+
+
+
+
+
+
+
+
+.btn-submit{
+    
+    width: 300px;
+    margin-top: 0px;
+    font-size: 16px;
+    padding: 12px 0px;
+}
+
+}
