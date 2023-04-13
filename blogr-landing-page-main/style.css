@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 :root{
@@ -18,7 +19,7 @@
 }
 
 .container{
-    height: 3394px;
+    
     background-color: hsl(0, 0%, 98%);
     display: flex;
     flex-direction: column;
@@ -43,17 +44,185 @@
     justify-content: space-around;
 }
 
+.header-nav-mobile{
+    top: 13%;
+    left: 10%;
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    padding:10px 25px 25px 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px  30px gray;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: 300;
+    display: none;
+}
+
+.product-options, .company-options, .connect-options{
+    background-color:hsl(240, 7%, 94%) ;
+    border-radius: 5px;
+    color:hsl(212, 12%, 43%);
+    padding: 10px;
+    display: none;
+    transition: all 1.3s ease-in;
+}
+
+.header-nav-mobile.active, .product-options.active, .company-options.active, .connect-options.active{
+    display: block !important;
+    transition: all 1.3s ease-in-out;
+}
+
+.header-nav-mobile h1{
+font-size: 17px;
+padding: 15px;
+}
+
+.header-nav-mobile h3{
+    padding: 8px;
+    font-size: 15px;
+}
+
+.login-nav-mobile{
+    display: flex;
+    flex-direction: column;
+    margin-top:  25px;
+    padding-top: 25px;
+    align-items: center;
+    border-top: 1px solid hsl(240, 7%, 94%);
+    
+    
+}
+
+.login-nav-mobile .btn{
+    color: white;
+    background-color: hsl(7, 99%, 72%);
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-top: 25px;    
+    font-size: 19px;
+    
+}
+.icon-dropdown{
+    margin-left: 5px;
+}
+
+.icon-dropdown-product.active, .icon-dropdown-company.active,.icon-dropdown-connect.active {
+    rotate: 180deg;
+    
+}
+
+.header-nav-mobile .btn-login{
+    font-size: 19px;
+    font-weight: 500;
+}
+
 .container-nav{
     display: flex;
     justify-content: flex-start;
     width: 50%;
 }
 
+.container-nav ul{
+    display: flex;
+}
+
+.container-nav ul li{
+    margin-top: 20px;
+}
+
 .container-nav a{
     margin-right: 25px;
     color: white;
     font-family: Overpass;
+    margin-bottom: 15px;
     
+}
+
+
+.drodown-gap{
+    width: 100%;
+    height: 20px;
+}
+
+.product-menu{
+    
+    background-color: white;
+    position: absolute;
+    padding: 30px 30px 15px 30px;
+    border-radius: 5px;
+    display: none;
+    margin-left: -30px;
+    box-shadow: 1px 1px  30px gray ;
+    
+    
+}
+.product-menu a{
+    display: block;
+    color: black;
+    font-family: Overpass;
+    padding: 0px 5px 15px 0px;
+    text-align: start;
+    font-size: 15px;
+    margin: 0;
+}
+
+.product:hover .product-menu{
+ display: block;
+}
+
+.company-menu{
+    background-color: white;
+    position: absolute;
+    padding: 30px 30px 15px 30px;
+    border-radius: 5px;
+    display: none;
+    margin-left: -30px;
+    box-shadow: 1px 1px  30px gray ;
+}
+.company-menu a{
+    display: block;
+    color: black;
+    font-family: Overpass;
+    padding: 0px 5px 15px 0px;
+    text-align: start;
+    font-size: 15px;
+    margin: 0;
+    
+}
+
+.company:hover .company-menu{
+ display: block;
+}
+
+.connect-menu{
+    background-color: white;
+    position: absolute;
+    padding: 30px 30px 15px 30px;
+    border-radius: 5px;
+    display: none;
+    margin-left: -30px;
+    box-shadow: 1px 1px  30px gray ;
+}
+.connect-menu a{
+    display: block;
+    color: black;
+    font-family: Overpass;
+    padding: 0px 5px 15px 0px;
+    text-align: start;
+    font-size: 15px;
+    margin: 0;
+    
+}
+
+.connect:hover .connect-menu{
+ display: block;
+}
+
+.container-nav a:hover{
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .container-login{
@@ -69,13 +238,24 @@
     color: white;
 }
 
-.container-login .btn{
+.container-login .btn {
     padding: 10px 30px;
     background-color: white;
     color:  hsl(7, 99%, 72%);
     border-radius: 20px;
     font-weight: 700;
 }
+.btn:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.container-login .btn-login:hover{
+    text-decoration: underline;
+}
+
+
 
 .container-banner1{
     width: 100%;
@@ -117,6 +297,11 @@
     background-color: transparent;
     color: white;
     border: 1px solid white;
+}
+
+.container-banner1 .btn-learn:hover{
+    color:  hsl(7, 99%, 72%);
+    background-color: white;
 }
 
 .container-banner2{
@@ -164,13 +349,470 @@
 
 .container-banner3{
     width: 100%;
-    height: 500px;
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 400px;
+    background: linear-gradient(to right, hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    
 }
 
 
 
+.banner3-content{
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/bg-pattern-circles.svg);
+        background-repeat: no-repeat;
+        background-position: -200px  -500px;
+        background-size: 68%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+       
+}
 
+.banner3-content img{
+position: relative;
+top: 15px;
+left: -50px;
+
+
+}
+
+.container-text-banner3{
+    height: 100%;
+    width: 40%;
+    font-family: Ubuntu;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.container-text-banner3 h1{
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+
+.container-text-banner3 p {
+    line-height: 30px;
+}
+
+.container-banner4{
+    width: 100%;
+    height: 1025px;
+    background-image: url(./images/illustration-laptop-desktop.svg);
+    
+    background-repeat: no-repeat;
+    background-position:-280px center ;
+    background-size: 68%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.container-text-banner4{
+width: 49%;
+height: 100%;
+font-family: Ubuntu;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+justify-content: center;
+padding-right: 190px;
+}
+
+.container-text-banner4 h1{
+    font-size: 35px;
+    margin-bottom: 35px;
+    margin-top: 100px;
+}
+
+
+.container-text-banner4 p {
+    line-height: 30px;
+
+}
+
+footer{
+    width: 100%;
+    height: 360px;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 100px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+.container-footer-logo{
+    width: 29.2%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-footer-text{
+    height: 100%;
+    width: 23.3%;
+    
+    text-align: center;
+}
+
+.container-footer-text h3{
+    margin-bottom: 20px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    color: var(--cor-Grayish-blue);
+    font-size: 15px;
+}
+
+.container-footer-text h3:hover{
+    text-decoration:underline;
+}
+
+.container-footer-text :first-child{
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+.container-mobile-btn{
+    display: none;
+}
+
+@media(max-width: 1023px){
+    .container{
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .header{
+        padding: 0px 30px;
+        justify-content: space-between;
+    }
+
+    .header .container-logo img{
+        width: 80px;
+    }
+
+    .container-nav, .container-login{
+        display: none;
+    }
+
+    .container-mobile-btn{
+        display: block;
+    }
+
+    .container-banner1{
+        text-align: center;
+        padding: 0px 40px;
+    }
+
+    .container-banner1 h1{
+        font-size: 32px;
+    }
+
+    .container-banner1 p{
+        font-size: 15px;
+    }
+
+    .container-banner2{
+        background-image: url(./images/illustration-editor-mobile.svg);
+        background-position: center 15%;
+        background-size: 110%;
+        padding: 0px 20px;
+        height: 100%;
+        margin-bottom: 40%;
+    }
+
+    .container-banner2 h1{
+        text-align: center;
+        font-size: 28px;
+        margin-top: 10%;
+        
+    }
+
+    .container-banner2 .container-text{
+        margin: 0;
+        width: 100%;
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    .container-banner2 .container-text h3{
+        margin-top: 50px;
+    }
+
+    .container-banner3{
+        height: 625px;
+        border-top-right-radius: 100px;
+       
+    }
+
+    .container-banner3 .banner3-content{
+        background-position: -120px -255px;
+        background-size: 585px;
+        flex-direction: column;
+        height: 625px;
+        margin: 0;
+        padding: 20px;
+        border-top-right-radius: 100px;
+    }
+
+    .container-banner3 .banner3-content img{
+       margin-left: 80px;
+        width: 330px;
+        margin-top: -175px;
+        
+        
+    }
+
+    .container-text-banner3{
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: -120px;
+    }
+
+    .container-text-banner3 h1{
+       font-weight: 400;
+       
+    }
+
+    
+
+    body .container .container-banner4{
+       padding:0;
+       padding-top: 350px;
+       height: 100%;
+       width: 100%;
+       margin: 0;
+
+       background-image: url(./images/illustration-laptop-mobile.svg);
+       background-repeat: no-repeat;
+       background-position: center 2%;
+       background-size: 135%;
+     
+      
+    }
+
+    body .container .container-banner4 .container-text-banner4{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20%;
+        padding: 20px;
+        
+        
+
+        
+
+    }
+
+    
+
+    .container-text-banner4  h1{
+       font-size: 25px;
+       margin: 0;
+       margin-bottom: 40px;
+       padding: 0;
+    }
+
+    .container-text-banner4:first-child{
+        margin-top: 100px;
+    }
+
+
+
+    .container-text-banner4  p{
+        margin-bottom: 50px;
+    }
+
+    footer{
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+    }
+
+    .container-footer-logo{
+        height:100%;
+        
+        
+    }
+    
+    body{
+        
+    }
+
+    .container-footer-text h3{
+        margin-bottom: 10px;
+        font-size: 18px;
+        
+        
+    }
+
+    .container-footer-text :first-child{
+        margin-top: 40px;
+    }
+
+
+@media screen and (min-width: 490px) and (max-width: 1023px){
+    
+     
+    .container-banner2{
+        margin-bottom: 30%;
+        background-position: center 22%;
+        background-size: 90%;
+        height: 100%;
+    }
+
+
+    .container-banner2 .container-text{
+        margin-top: 80%;
+        
+    }
+
+    .container-banner3 .banner3-content img{
+        width: 70%;
+        
+    }
+
+    body .container .container-banner4{
+        background-position: center 2%;
+        background-size: 100%;
+        padding-top: 50%;
+    }
+    .container-banner4 .container-text-banner4{
+        margin-top: 100%;
+       
+    }
+
+    @media screen and (min-width: 721px) and (max-width: 1023px){
+    
+    .container-banner1 h1{
+        font-size: 5vw;
+    }
+
+    .container-banner1 p{
+        font-size: 2vw;
+    }
+
+    .container-banner1 .btn, .container-banner1 .btn-learn{
+        font-size: 1.8vw;
+    }
+
+    .container-banner2{
+        margin-bottom: 30%;
+        background-position: center 30%;
+        background-size: 65%;
+        
+    }
+
+    .container-banner2 .container-text{
+        margin-top: 60%;
+        
+    }
+
+    .container-banner2 h1{
+        font-size: 3.5vw;
+    }
+
+    .container-banner2 h3{
+        font-size: 3vw;
+    }
+
+    .container-banner2 p{
+        font-size: 1.8vw;
+    }
+
+    .container-banner3 .banner3-content .container-text-banner3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .container-banner3 .banner3-content img{
+        margin-top: -35%;
+    }
+
+    .container-banner3 h1{
+        font-size: 3.5vw;
+        margin-top: 10%;
+        
+    }
+
+    .container-banner3 p{
+        font-size: 1.8vw;
+    }
+    body .container .container-banner4{
+        background-size: 80%;
+    }
+
+    body .container .container-banner4 .container-text-banner4{
+        margin-top: 8%;}
+
+    .container-banner4 h1{
+        font-size: 3.5vw;
+    }
+
+    .container-banner4 p{
+        font-size: 1.8vw;
+        
+    }
+    
+    .container-footer-text h3{
+        font-size: 2.8vw;
+    }
+
+    }
+}
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    
+    .container-banner2{
+        background-position: 120% 70%;
+        background-size: 60% ;
+    }
+    
+    .container-banner2 .container-text{
+        width: 45%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-self: flex-start;
+    }
+
+    .container-banner2 h1{
+        margin-top: 8%;
+    }
+
+    .container-banner4{
+        height: 100%;
+        background-position: -50% center;
+    }
+
+    .container-text-banner4{
+        padding-right: 5%;
+        padding-bottom: 20%;
+    }
+
+    .container-text-banner4 h1{
+        
+        margin-top: 25%;
+    }
+}
