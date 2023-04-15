@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    font-family:'Roboto Mono';
+    
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    background: linear-gradient(to right, #ffffff,  #7c4bda);
+    padding: 20px;
+}
+
+
+header .logo-container{
+    display: block;
+    
+}
+
+header .logo-container img{
+    width: 80px;
+}
+
+header nav{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav div{
+font-size: 1.8vw;
+font-weight: 600;
+}
+
+.banner1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner1 img{
+    width: 80%;
+}
+
+.about-me{
+    color: white;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.about-me .img-container-about{
+    padding: 30px;
+}
+
+.about-me img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+
+.about-me .conteiner-text-about{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ .label-tittle{
+    color: #7c4bda;
+    
+}
+
+.tittle{
+    font-size: 40px;
+    font-weight: 400;
+}
+ .line{
+    width: 60px;
+    height: 3px;
+    background-color: #7c4bda;
+}
+
+.about-me .conteiner-text-about p{
+    margin-top: 20px;
+}
+
+
+
+
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    border: 2px solid #362555;
+}
+
+.info-container .info{
+    
+    padding: 20px;
+}
+
+.info-container .info h3{
+    padding: 15px;
+}
+
+.my-services{
+    background-color:rgb(251, 239, 239);
+    padding: 50px;
+}
+
+.service-container{
+    display:flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service{
+    
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
