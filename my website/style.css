@@ -64,10 +64,12 @@ font-weight: 600;
 
 .about-me .img-container-about{
     padding: 30px;
+    
+    
 }
 
 .about-me img{
-    max-width: 100%;
+    width: 300px;
     max-height: 100%;
     border-radius: 30px;
 }
@@ -136,5 +138,25 @@ font-weight: 600;
     box-shadow: 2px 2px 5px black;
     border-radius: 10px;
     padding: 10px;
+}
+
+.projects{
+    padding: 50px;
+}
+
+.projects-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.project{
+    padding: 10px;
+}
+
+.project img{
+    width: 500px;
 }
 
