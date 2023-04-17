@@ -41,5 +41,5 @@ Continuously training html and css to develop with speed and quality.
 - Flexbox
 ## Author
 - Renato Coni
-- [My Site](https://renatoconi.github.io/portfolio/my%20website/).
-- [Linkedin](https://www.linkedin.com/in/renato-coni-aa6636196/).
+- [My Site](https://renatoconi.github.io/portfolio/my%20website/)
+- [Linkedin](https://www.linkedin.com/in/renato-coni-aa6636196/)
