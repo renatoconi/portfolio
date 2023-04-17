@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/Bateria/]
 ![./bateria.gif](./bateria.gif)
 
 # Bateria Javascript

@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/pizza_base/]
 ![./pizza_base.gif](./pizza_base.gif)
 
 # Pizza_Base

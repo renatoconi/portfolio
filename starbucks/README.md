@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/starbucks/]
 ![./starbucks.gif](./starbucks.gif)
 
 # Starbucks with Grid

@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/To%20do%20list/]
 ![./todolist.gif](./todolist.gif)
 
 # to do List

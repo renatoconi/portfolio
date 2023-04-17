@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/Mario%20Game/]
 ![./mariojump.gif](./mariojump.gif)
 
 # Mario Game

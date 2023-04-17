@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/Medicenter/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/flexbox%20na%20pratica/]
 ![./medicenter.gif](./medicenter.gif)
 
 

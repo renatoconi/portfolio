@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/landing%20page%20iphone%2013/]
 ![./iphone.gif](./iphone.gif)
 
 # Landing Page Iphone 13

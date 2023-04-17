@@ -1,4 +1,4 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/jogo%20da%20velha/]
 ![./jogovelha.gif](./jogovelha.gif)
 
 # Jogo da Velha Javascript
