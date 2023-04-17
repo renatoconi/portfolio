@@ -5,12 +5,14 @@
 
 This was an academic project, with the aim of fixing learnings in the Html and CSS course
 
+![awax.gif](./awax.gif)
+
 ## Index
 
 - [Overview](#Overview)
 - [Screenshot](#screenshot)
 - [My process](#my-process)
-- [Built with](#built with)
+- [Built with](#built-with)
 - [Author](#author)
 
 
