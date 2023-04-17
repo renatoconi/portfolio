@@ -1,4 +1,6 @@
-- Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
+- Live Site URL: [https://renatoconi.github.io/portfolio/clima/]
+
+![./clima.gif](./clima.gif)
 
 
 # Clima Javascript
@@ -10,27 +12,13 @@ This was an academic project, with the aim of fixing learnings in the Html,CSS a
 - [Overview](#Overview)
 - [Screenshot](#screenshot)
 - [My process](#my-process)
-- [Built with](#built with)
+- [Built with](#built-with)
 - [Author](#author)
 
 
 
 ## Overview
 Another academic project: a website with responsive design, another step towards becoming a quality developer.
-
-### print Screen
-
-Sample response of 1440px.
-
-![./1440px.png](./1440px.png)
-
-Sample response of 768px.
-
-![./768px.png](./768px.png)
-
-Sample response of 768px.
-
-![./425px.png](./425px.png)
 
 
 ## My process
