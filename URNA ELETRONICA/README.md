@@ -1,5 +1,5 @@
 - Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
-
+![./urna.gif](./urna.gif)
 
 # Eletronic Urna
 

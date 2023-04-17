@@ -1,5 +1,7 @@
 # Frontend Mentor - Interactive card details form solution
 
+![./](./interactiveform.gif)
+
 This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
@@ -59,6 +61,8 @@ I will continue to practice, so that I can develop codes with speed and quality.
 
 ## Author
 
-- Website - [Renato Coni]
-- Frontend Mentor - [@renatoconi](https://www.frontendmentor.io/profile/@renatoconi)
+- Renato Coni
 
+- Website - (https://renatoconi.github.io/portfolio/my%20website/)
+- Frontend Mentor - [@renatoconi](https://www.frontendmentor.io/profile/@renatoconi)
+- [Linkedin](https://www.linkedin.com/in/renato-coni-aa6636196/).

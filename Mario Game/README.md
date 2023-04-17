@@ -1,5 +1,5 @@
 - Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
-
+![./mariojump.gif](./mariojump.gif)
 
 # Mario Game
 
@@ -10,7 +10,7 @@ This was an academic project, with the aim of fixing learnings in the Html,CSS a
 - [Overview](#Overview)
 - [Screenshot](#screenshot)
 - [My process](#my-process)
-- [Built with](#built with)
+- [Built with](#built-with)
 - [Author](#author)
 
 

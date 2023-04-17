@@ -1,5 +1,5 @@
 - Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
-
+![./quiz.gif](./quiz.gif)
 
 # Quiz Javascript
 

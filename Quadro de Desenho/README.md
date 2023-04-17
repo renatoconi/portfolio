@@ -1,5 +1,5 @@
 - Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
-
+![./canvas.gif](./canvas.gif)
 
 # Quadro de Desenho
 

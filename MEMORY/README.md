@@ -1,6 +1,5 @@
 - Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
-
-
+![./memory.gif](./memory.gif)
 # Memory Game
 
 This was an academic project, with the aim of fixing learnings in the Html,CSS and Javascript course.

@@ -1,5 +1,5 @@
 - Live Site URL: [https://renatoconi.github.io/portfolio/awax/]
-
+![./relogio.gif](./relogio.gif)
 
 # Relogio Analogico
 
