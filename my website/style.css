@@ -5,8 +5,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    
     font-family:'Roboto Mono';
+    transition: all .5s ease;
     
 }
 
@@ -159,11 +159,17 @@ font-weight: 600;
     background-color:#362555;
     border-radius: 15px;
     height: 100%;
-    width:min-content;
+    width:30vw;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: width 1.5s ease;
+    
+}
+
+.project.active{
+    width: 90vw;
 }
 
 .project .img-project{
@@ -177,7 +183,7 @@ font-weight: 600;
 
 
 .project h3{
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 20px;
     color: #ffffff;
 }
@@ -221,11 +227,22 @@ font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    
+
 }
 
-.btn.read-more:hover + .read-more-content{
+.btn.read-more:hover{
+    text-decoration: underline;
+}
+
+.read-more-content.active{
     display: flex;
 }
+
+
+
+
 
 .readme-project{
 
@@ -238,10 +255,43 @@ width: 100%;
 }
 
 .read-more-content{
-    
+    display: none;
     width: 80vw;
     color: #ffffff;
     padding: 15px;
     text-align: start;
     flex-direction: column;
+    
+}
+
+
+
+
+.read-more-content h2{
+margin-top: 20px;
+
+font-size: 25px;
+}
+
+.read-more-content .line{
+    background-color: gray!important ;
+    margin-bottom: 30px;
+}
+
+.read-more-content h3 {
+font-size: 20px;
+font-weight: 500;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.read-more-content h4{
+margin-bottom: 10px;
+font-size: 15px;
+color: gray;
+}
+
+.read-more-content p{
+margin-bottom: 20px;
+color: gray;
 }
