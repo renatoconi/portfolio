@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gifsicle": "^5.2.1",
+    "pngquant-bin": "^6.0.1",
+    "sharp": "^0.32.0"
+  },
+  "devDependencies": {
+    "compress-images": "^2.0.5"
+  }
+}
