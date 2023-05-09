@@ -1,123 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Interactive card details form</title>
 </head>
+
 <body>
-  <div class="container">
-    <div class="container-card">
-        <div class="container-card-front">
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-            <div class="number-front-card" id="numberFrontCard">
-                9591  6489  6389  101E
+    <div class="container">
+        <div class="container-card">
+            <div class="container-card-front">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="number-front-card" id="numberFrontCard">
+                    9591 6489 6389 101E
+                </div>
+
+                <div class="container-name-valid-frontcard">
+                    <div class="name-front-card" id="nameFrontCard">
+                        Felicia Leire
+                    </div>
+                    <div class="valid-front-card" id="validFrontCard">
+                        09/00
+                    </div>
+                </div>
+            </div>
+            <div class="container-card-back">
+                <div class="cvc-cardback" id="cvcCardBack">
+                    000
+                </div>
             </div>
 
-            <div class="container-name-valid-frontcard">
-            <div class="name-front-card" id="nameFrontCard">
-                Felicia Leire
-            </div>
-            <div class="valid-front-card" id="validFrontCard">
-                09/00
-            </div>
-            </div>
         </div>
-        <div class="container-card-back">
-            <div class="cvc-cardback" id="cvcCardBack">
-                000
-            </div>
+
+        <div class="container-finish">
+            <img src="./images/icon-complete.svg" alt="">
+            <h1>THANK YOU!</h1>
+            <h3>we've added your card details</h3>
+            <a class="btn-submit" href="#" id="btnFinish">Continue</a>
         </div>
-        
+
+        <div class="container-form active">
+
+            <form action="">
+
+                <div class="input-name-container">
+                    <label>CARDHOLDER NAME <br>
+                        <input type="text" id="input-name" class="input-cardholder" placeholder="e.g. Jane Appleseed">
+                    </label>
+                    <div class="erro-name" id="erroName">
+                        Wrong format, letters only.
+                    </div>
+                </div>
+
+                <div class="card-number-container">
+                    <label>CARD NUMBER <br>
+                        <input maxlength="19" type="text" id="input-card-number" class="input-cardnumber"
+                            placeholder="1234 5678 9123">
+                    </label>
+                    <div class="erro-card" id="erroCard">
+                        Wrong format, numbers only.
+                    </div>
+                </div>
+
+                <div class="container-date-cvc">
+                    <div class="card-mes-container">
+                        <label>
+                            EXP. DATE <br>
+                            <input maxlength="2" type="text" class="input-mes" id="input-mes" placeholder="MM">
+                        </label>
+                        <div class="erro-mes-letters" id="erroMesLetters">
+                            numbers only
+                        </div>
+
+                        <div class="erro-mes-null" id="erroMesNull">
+                            Can't be blank
+                        </div>
+                    </div>
+
+                    <div class="card-ano-container">
+
+                        <label for="">
+                            (MM/YY) <br>
+                            <input maxlength="2" type="text" class="input-ano" id="input-ano" placeholder="YY">
+                        </label>
+                        <div class="erro-ano-letters" id="erroAnoLetters">
+                            numbers only
+                        </div>
+
+                        <div class="erro-ano-null" id="erroAnoNull">
+                            Can't be blank
+                        </div>
+
+                    </div>
+                    <div class="card-cvc-container">
+                        <label for=""> CVC<br>
+                            <input maxlength="3" type="text" class="input-cvc" id="input-cvc" placeholder="e.g 123">
+                        </label>
+                        <div class="erro-cvc-letters" id="erroCvcLetters">
+                            numbers only
+                        </div>
+
+                        <div class="erro-cvc-null" id="erroCvcNull">
+                            Can't be blank
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-submit" id="btn">Confirm</a>
+
+            </form>
+
+
+
+        </div>
     </div>
 
-    <div class="container-finish">
-      <img src="./images/icon-complete.svg" alt="">
-      <h1>THANK YOU!</h1>
-      <h3>we've added your card details</h3>
-      <a class="btn-submit" href="#" id="btnFinish" >Continue</a>
-    </div>
-
-    <div class="container-form active">
-
-    <form action="">
-
-        <div class="input-name-container">
-             <label >CARDHOLDER NAME <br>
-                <input type="text" id="input-name" class="input-cardholder"   placeholder="e.g. Jane Appleseed">
-             </label>
-             <div class="erro-name" id="erroName">
-                Wrong format, letters only.
-             </div>
-        </div>
-        
-        <div class="card-number-container">
-            <label >CARD NUMBER <br>
-                <input maxlength="19" type="text" id="input-card-number" class="input-cardnumber" placeholder="1234 5678 9123">
-            </label>
-            <div class="erro-card" id="erroCard">
-                Wrong format, numbers only.
-            </div>
-        </div>
-
-        <div class="container-date-cvc">
-            <div class="card-mes-container">
-                <label>
-                    EXP. DATE      <br>          
-                     <input maxlength="2" type="text" class="input-mes" id="input-mes" placeholder="MM">
-                </label>
-                <div class="erro-mes-letters" id="erroMesLetters">
-                    numbers only
-                </div>
-
-                <div class="erro-mes-null" id="erroMesNull">
-                    Can't be blank
-                </div>
-            </div>
-        
-            <div class="card-ano-container">
-
-                <label for="">
-                    (MM/YY)  <br>
-                    <input maxlength="2" type="text" class="input-ano" id="input-ano" placeholder="YY">
-                </label>
-                <div class="erro-ano-letters" id="erroAnoLetters">
-                    numbers only
-                </div>
-
-                <div class="erro-ano-null" id="erroAnoNull">
-                    Can't be blank
-                </div>
-           
-            </div>
-            <div class="card-cvc-container">
-                 <label for=""> CVC<br>
-                    <input maxlength="3" type="text" class="input-cvc" id="input-cvc" placeholder="e.g 123">
-                </label>
-                <div class="erro-cvc-letters" id="erroCvcLetters">
-                    numbers only
-                </div>
-
-                <div class="erro-cvc-null" id="erroCvcNull">
-                    Can't be blank
-                </div>
-            </div>  
-        </div>
-        <a   href="#" class="btn-submit" id="btn">Confirm</a>
-   
-    </form>
-
-    
-
-</div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </body>
+
 </html>

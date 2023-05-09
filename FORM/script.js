@@ -8,6 +8,7 @@ let B7Validator = {
 
         for(let i=0;i<inputs.length;i++){
             let input = inputs[i];
+            console.log("🚀 ~ file: script.js:11 ~ input:", input)
             let check = B7Validator.checkInput(input);
             if(check !==true) {
                 send = false;
